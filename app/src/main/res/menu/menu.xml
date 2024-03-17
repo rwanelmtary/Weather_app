@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/home_svgrepo_com__1_"
+            android:title="" />
+        <item
+            android:id="@+id/mapsFragment"
+            android:icon="@drawable/map_svgrepo_com"
+            android:title="" />
+        <item
+            android:id="@+id/favouriteFragment2"
+            android:icon="@drawable/map_point_favourite_svgrepo_com"
+            android:title="" />
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/setting_1_svgrepo_com"
+            android:title=""/>
+
+    </group>
+</menu>

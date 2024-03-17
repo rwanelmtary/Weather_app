@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save\n</string>
+    <string name="Add">Save\n</string>
+    <string name="delet">Delete</string>
+    <string name="kelvin">Kelvin\n</string>
+    <string name="celsius">Celsiuc\n</string>
+    <string name="fahreheit">Fahrenheit\n</string>
+    <string name="Temp">Temp\n</string>
+    <string name="meter">M/sec</string>
+    <string name="mile">Mile/H</string>
+    <string name="language">language\n</string>
+    <string name="arabic">Arabic\n</string>
+    <string name="english">English</string>
+</resources>
