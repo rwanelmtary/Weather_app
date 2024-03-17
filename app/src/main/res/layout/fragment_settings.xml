@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.SettingsFragment" >
+
+    <ScrollView
+        android:layout_width="407dp"
+        android:layout_height="727dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="230dp"
+                    android:layout_height="215dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="#702E0439"
+
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tempsetting"
+                            android:layout_width="129dp"
+                            android:layout_height="34dp"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center"
+                            android:text="@string/Temp"
+                            android:textColor="#FDECEC"
+                            android:textColorHint="#ECE4E4"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/tempgroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <RadioButton
+                                android:id="@+id/kelvin"
+                                android:textColor="#FDECEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/kelvin" />
+
+                            <RadioButton
+                                android:id="@+id/celsius"
+                                android:textColor="#FDECEC"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/celsius" />
+
+                            <RadioButton
+                                android:id="@+id/fahrehite"
+                                android:textColor="#FDECEC"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fahreheit" />
+                        </RadioGroup>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="230dp"
+                    android:layout_height="215dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#702E0439"
+
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/windspeedsetting"
+                            android:layout_width="129dp"
+                            android:layout_height="34dp"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center"
+                            android:text="Wind"
+                            android:textColor="#FDECEC"
+                            android:textColorHint="#ECE4E4"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/windgroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <RadioButton
+                                android:id="@+id/meter"
+                                android:textColor="#FDECEC"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meter" />
+
+                            <RadioButton
+                                android:id="@+id/mile"
+                                android:textColor="#FDECEC"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mile" />
+
+
+                        </RadioGroup>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="215dp"
+                    app:cardBackgroundColor="#702E0439"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="30dp"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/language"
+                            android:layout_width="129dp"
+                            android:layout_height="34dp"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center"
+                            android:text="@string/language"
+                            android:textColor="#FDECEC"
+                            android:textColorHint="#ECE4E4"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/langgroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <RadioButton
+                                android:id="@+id/arabic"
+                                android:layout_width="90dp"
+                                android:textColor="#FDECEC"
+
+                                android:layout_height="wrap_content"
+                                android:text="@string/arabic" />
+
+                            <RadioButton
+                                android:id="@+id/english"
+                                android:textColor="#FDECEC"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/english" />
+
+
+                        </RadioGroup>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
